@@ -1,0 +1,739 @@
+.container-left.scoreline {
+    border-right: 1px solid #dcdcdc;
+    padding: 0 30px 30px 0;
+    width: 829px
+}
+
+.scoreline .nav {
+    height: auto;
+    *zoom: 1;
+    margin-bottom: 20px;
+    border-left: 1px solid #e2e2e2;
+    position: relative;
+    z-index: 1
+}
+
+.scoreline .nav:before,
+.scoreline .nav:after {
+    display: table;
+    content: "";
+    line-height: 0
+}
+
+.scoreline .nav:after {
+    clear: both
+}
+
+.scoreline .nav a {
+    display: block;
+    font-size: 16px;
+    color: #666;
+    background: #f3f3f3;
+    border: 1px solid #e2e2e2;
+    width: 140px;
+    height: 48px;
+    float: left;
+    line-height: 48px;
+    text-align: center;
+    margin-left: -1px;
+    z-index: 2;
+    position: relative
+}
+
+.scoreline .nav a.active {
+    color: #FF8400;
+    border-bottom: 0;
+    background: #fff
+}
+
+.scoreline .nav a:hover {
+    color: #FF8400;
+    background: #fff
+}
+
+.scoreline .nav .line {
+    border-bottom: 1px solid #e2e2e2;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 265px
+}
+
+.scoreline h1 {
+    text-align: center;
+    color: #424242;
+    font-size: 20px
+}
+
+.scoreline .screen {
+    height: auto;
+    *zoom: 1;
+    padding: 20px 0 10px
+}
+
+.scoreline .screen:before,
+.scoreline .screen:after {
+    display: table;
+    content: "";
+    line-height: 0
+}
+
+.scoreline .screen:after {
+    clear: both
+}
+
+.scoreline .screen-box {
+    height: auto;
+    *zoom: 1;
+    margin-top: 15px;
+    font-family: 'Microsoft YaHei', SimSun, Arial, sans-serif
+}
+
+.scoreline .screen-box:before,
+.scoreline .screen-box:after {
+    display: table;
+    content: "";
+    line-height: 0
+}
+
+.scoreline .screen-box:after {
+    clear: both
+}
+
+.scoreline .screen-box .title {
+    width: 50px;
+    float: left;
+    height: auto;
+    *zoom: 1;
+    line-height: 25px;
+    color: #999;
+    font-size: 12px;
+    text-align: right
+}
+
+.scoreline .screen-box .title:before,
+.scoreline .screen-box .title:after {
+    display: table;
+    content: "";
+    line-height: 0
+}
+
+.scoreline .screen-box .title:after {
+    clear: both
+}
+
+.scoreline .screen-box .list {
+    width: 746px;
+    float: left;
+    height: auto;
+    *zoom: 1
+}
+
+.scoreline .screen-box .list:before,
+.scoreline .screen-box .list:after {
+    display: table;
+    content: "";
+    line-height: 0
+}
+
+.scoreline .screen-box .list:after {
+    clear: both
+}
+
+.lt-ie8 .scoreline .screen-box .list {
+    width: 720px
+}
+
+.scoreline .screen-box .list ul {
+    height: auto;
+    *zoom: 1
+}
+
+.scoreline .screen-box .list ul:before,
+.scoreline .screen-box .list ul:after {
+    display: table;
+    content: "";
+    line-height: 0
+}
+
+.scoreline .screen-box .list ul:after {
+    clear: both
+}
+
+.scoreline .screen-box .list ul li {
+    font-size: 12px;
+    float: left;
+    margin: 0 5px 10px 0;
+    height: 24px;
+    display: inline-block
+}
+
+.scoreline .screen-box .list ul li a {
+    padding: 4px 8px;
+    color: #444;
+    display: inline-block
+}
+
+.scoreline .screen-box .list ul li a span {
+    display: none
+}
+
+.scoreline .screen-box .list ul li a:hover {
+    color: #FF8400
+}
+
+.scoreline .screen-box .list ul li a.all {
+    display: block;
+    padding: 4px 8px;
+    color: #444;
+    background: #eee
+}
+
+.scoreline .screen-box .list ul li a.all:hover {
+    color: #FF8400
+}
+
+.scoreline .screen-box.major {
+    border-bottom: 0
+}
+
+.scoreline .screen-box.major ul li a {
+    background: #eee
+}
+
+.scoreline .screen p {
+    text-align: center;
+    color: #666;
+    cursor: pointer;
+    margin-top: 5px
+}
+
+.scoreline .screen #showScreen {
+    display: none
+}
+
+.scoreline .provinces {
+    width: 848px;
+    height: auto;
+    *zoom: 1;
+    background: #eee;
+    padding: 10px 0 10px 10px;
+    border: 1px solid #ddd
+}
+
+.scoreline .provinces:before,
+.scoreline .provinces:after {
+    display: table;
+    content: "";
+    line-height: 0
+}
+
+.scoreline .provinces:after {
+    clear: both
+}
+
+.scoreline .provinces ul li {
+    height: 35px;
+    line-height: 35px;
+    float: left;
+    margin-right: 5px
+}
+
+.scoreline .provinces ul li a {
+    padding: 4px 8px;
+    font-size: 15px
+}
+
+.scoreline .provinces ul li a:hover {
+    color: #fff;
+    background: #FF8400
+}
+
+.scoreline .pcl-title {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+    margin-top: 20px;
+    width: 100%;
+    margin-bottom: 10px;
+    background: #4d9999;
+    color: #fff;
+    border-color: #aad4d5
+}
+
+.scoreline .pcl-title tr th {
+    vertical-align: middle
+}
+
+.scoreline .pcl-title-fixed {
+    position: fixed;
+    top: 20px;
+    width: 829px;
+    margin-top: 20px;
+    padding: 0;
+    background: #4d9999;
+    color: #fff;
+    border-color: #aad4d5
+}
+
+.scoreline .pcl-list {
+    margin-bottom: 20px;
+    width: 100%
+}
+
+.scoreline .pcl-list tr td {
+    height: 55px;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+    font-size: 14px
+}
+
+.scoreline .pcl-list tr td.t {
+    color: #0276B0;
+    font-weight: 700;
+    font-size: 18px
+}
+
+.scoreline .pcl-list tr td.b1 {
+    background: #f7f7f7
+}
+
+.scoreline .pcl-list tr td.red {
+    color: #FF8400
+}
+
+.scoreline .pcl-list .icon-minus {
+    color: #ddd
+}
+
+.arts-science-list tbody tr td.active {
+    background: #7bb !important;
+    color: #fff
+}
+
+.arts-science-list tbody tr td.active .icon-minus {
+    color: #fff
+}
+
+.uzy-examDynamic .list li {
+    border-bottom: 1px dashed #b8b8b8
+}
+
+.scoreline .warn-box.sad .info h4 {
+    font-size: 28px;
+    color: #999;
+    line-height: 150%
+}
+
+.novip.novip-scoreline-college {
+    min-height: 753px;
+    background: url(../../../../../staticv2.youzy.cn/images/colleges/scorelines/college.jpg) no-repeat
+}
+
+.novip.novip-scoreline-plan {
+    min-height: 1234px;
+    background: url(../../../../../staticv2.youzy.cn/images/colleges/scorelines/plan.jpg) no-repeat
+}
+
+.novip.novip-scoreline-major {
+    min-height: 600px;
+    background: url(../../../../../staticv2.youzy.cn/images/colleges/scorelines/major.jpg) no-repeat
+}
+
+.novip.novip-scoreline-college.zj {
+    min-height: 600px;
+    background: url(../../../../../staticv2.youzy.cn/images/colleges/scorelines/fuzzy-college-score-zj.png) no-repeat;
+    background-size: 100% 100%
+}
+
+.novip.novip-scoreline-major.zj {
+    min-height: 600px;
+    background: url(../../../../../staticv2.youzy.cn/images/colleges/scorelines/fuzzy-scores-pfraction-zj.png) no-repeat;
+    background-size: 100% 100%
+}
+
+.novip.novip-scoreline-plan-zj {
+    min-height: 600px;
+    background: url(../../../../../staticv2.youzy.cn/images/colleges/scorelines/planZj.jpg) no-repeat
+}
+
+.novip.novip-scoreline {
+    min-height: 600px;
+    background: url(../../../../../staticv2.youzy.cn/images/scorelines/scoreline.jpg) no-repeat
+}
+
+.novip.novip-scoreline-college.sh {
+    min-height: 600px;
+    background: url(../../../../../staticv2.youzy.cn/images/scorelines/fuzzy-scorelineSh.jpg) no-repeat
+}
+
+.novip.novip-college-score.sh {
+    min-height: 600px;
+    background: url(../../../../../staticv2.youzy.cn/images/colleges/scorelines/fuzzy-college-scoreSh.jpg) no-repeat
+}
+
+.novip.novip-college-major-score.sh {
+    min-height: 600px;
+    background: url(../../../../../staticv2.youzy.cn/images/colleges/scorelines/fuzzy-college-major-score-sh.jpg) no-repeat
+}
+
+.scoreline .scoreline-instruction {
+    font-size: 12px;
+    color: #999;
+    width: 90%;
+    margin-top: 30px;
+    line-height: 20px
+}
+
+.scoreline.newgaokao.v2 .cfraction .title .college-name {
+    float: initial
+}
+
+.scores.v2 .associated-search {
+    width: 994px
+}
+
+.scoreline.v2 .independent {
+    position: relative
+}
+
+.scoreline.v2 .associated-search {
+    position: absolute;
+    top: 43px;
+    left: 0;
+    background: #fff;
+    width: 994px;
+    padding-bottom: 10px;
+    z-index: 101
+}
+
+.scoreline.v2 .associated-search ul li {
+    padding: 0 10px 15px
+}
+
+.scoreline.v2 .associated-search ul li div>a {
+    margin-top: -4px
+}
+
+.scoreline.v2 .screen-box .title {
+    width: 60px;
+    text-align: left
+}
+
+.scoreline.v2 .screen-box .list ul li {
+    margin: 0 0 10px 5px
+}
+
+.scoreline.v2.newgaokao .title-main select {
+    width: 75px;
+    margin-top: 4px
+}
+
+.scoreline .pcl.v2 {
+    margin: 0 -15px;
+    *zoom: 1
+}
+
+.scoreline .pcl.v2:before,
+.scoreline .pcl.v2:after {
+    display: table;
+    content: "";
+    line-height: 0
+}
+
+.scoreline .pcl.v2:after {
+    clear: both
+}
+
+.scoreline .pcl.v2 .pcl-list {
+    width: 380px;
+    margin: 0 15px 20px;
+    float: left
+}
+
+.scoreline .pcl-list.table-higher tr td {
+    height: 92px
+}
+
+.scoreline .pcl-list.table-high tr td {
+    height: 69px
+}
+
+.scoreline .pcl-list.table-min-high tr td {
+    height: 66px
+}
+
+.scoreline .independent .input-box input {
+    width: 98%
+}
+
+.scoreline .independent .input-box .btn-primary {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 130px;
+    font-size: 18px;
+    padding: 13px 12px 12px;
+    text-align: center
+}
+
+.scoreline .independent .associated-search {
+    margin-top: 0
+}
+
+.scoreline .no-search {
+    color: #666;
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 10px
+}
+
+.scoreline .uzy-college-list .info {
+    width: 550px
+}
+
+.scoreline .uzy-college-list .btn_group {
+    width: 105px;
+    margin-left: 22px;
+    padding: 0
+}
+
+.scoreline .uzy-college-list .btn_group button {
+    margin-top: 35px;
+    border-radius: 3px !important;
+    width: 105px;
+    height: 40px;
+    font-size: 16px
+}
+
+.scoreline .search-resulted {
+    color: #666;
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 10px
+}
+
+.scoreline .cfraction .title {
+    height: auto;
+    *zoom: 1;
+    margin: 30px 0 20px
+}
+
+.scoreline .cfraction .title:before,
+.scoreline .cfraction .title:after {
+    display: table;
+    content: "";
+    line-height: 0
+}
+
+.scoreline .cfraction .title:after {
+    clear: both
+}
+
+.scoreline .cfraction .title.bdtop {
+    border-top: 1px solid #dcdcdc;
+    padding-top: 30px
+}
+
+.scoreline .cfraction .title .college-name {
+    font-size: 30px;
+    color: #000;
+    float: left
+}
+
+.scoreline .cfraction .title .btn-blank {
+    display: inline-block;
+    border: 1px solid #dcdcdc;
+    font-size: 16px;
+    color: #666 !important;
+    float: left;
+    padding: 3px 10px;
+    margin: 0 0 0 25px;
+    background: #fff
+}
+
+.scoreline .cfraction .title .btn-blank:hover {
+    background: #dcdcdc
+}
+
+.scoreline .cfraction .table {
+    margin-top: 30px
+}
+
+.scoreline .cfraction .title .pro {
+    color: #666;
+    font-size: 16px;
+    float: left;
+    margin: 8px 30px 0 0
+}
+
+.scoreline .cfraction .title.recommendation .fillin-select-wrap {
+    float: left;
+    text-align: center;
+    margin-top: 5px
+}
+
+.uzy-fillin-scoreline .home-fillin {
+    width: 300px;
+    background: #fff;
+    font-size: 14px;
+    left: 0;
+    margin-left: 0;
+    padding: 0;
+    margin-top: 20px;
+    position: relative;
+    top: 0;
+    z-index: 100;
+    font-size: 16px
+}
+
+.uzy-fillin-scoreline .home-fillin.js {
+    height: 330px
+}
+
+.uzy-fillin-scoreline .modal-title a {
+    font-size: 14px;
+    color: #424242;
+    margin-left: 20px
+}
+
+.uzy-schoolNews .list li {
+    border-bottom: 1px dashed #b8b8b8
+}
+
+.scoreline .pfraction {
+    height: auto;
+    *zoom: 1
+}
+
+.scoreline .pfraction:before,
+.scoreline .pfraction:after {
+    display: table;
+    content: "";
+    line-height: 0
+}
+
+.scoreline .pfraction:after {
+    clear: both
+}
+
+.scoreline .pfraction li {
+    border-top: 1px solid #dcdcdc;
+    padding-top: 20px;
+    height: auto;
+    *zoom: 1;
+    margin-bottom: 20px
+}
+
+.scoreline .pfraction li:before,
+.scoreline .pfraction li:after {
+    display: table;
+    content: "";
+    line-height: 0
+}
+
+.scoreline .pfraction li:after {
+    clear: both
+}
+
+.scoreline .pfraction li img {
+    width: 133px;
+    height: 88px
+}
+
+.scoreline .pfraction li .mgleft {
+    margin-left: 10px;
+    float: left;
+    width: 655px
+}
+
+.scoreline .pfraction li h4 {
+    font-size: 16px;
+    color: #333;
+    font-weight: 400
+}
+
+.scoreline .pfraction li .font {
+    color: #666;
+    font-size: 14px;
+    padding: 5px 0
+}
+
+.scoreline .pfraction li .font a {
+    color: #FF8400
+}
+
+.scoreline .pfraction li .txt {
+    color: #999;
+    font-size: 12px
+}
+
+.scoreline .pfraction li .txt span {
+    display: inline-block;
+    border-right: 1px solid #999;
+    padding-right: 10px;
+    margin-right: 8px
+}
+
+.scoreline .cfraction .title.recommendation .fillin-select-wrap {
+    margin: 0 0 0 20px
+}
+
+.uzy-majorNews .list li {
+    border-bottom: 1px dashed #b8b8b8
+}
+
+.scoreline .newplan.bd {
+    border: 1px solid #dcdcdc;
+    padding: 30px 20px;
+    margin-top: 10px
+}
+
+.scoreline .newplan h3 {
+    font-size: 22px;
+    color: #333;
+    font-weight: 400;
+    margin-top: 30px;
+    line-height: 150%
+}
+
+.scoreline .newplan #pieCharts {
+    margin-bottom: 30px
+}
+
+.uzy-examDynamic .list li {
+    border-bottom: 1px dashed #b8b8b8
+}
+
+.scoreline.newgaokao .title-main {
+    color: #FF8400;
+    font-size: 22px;
+    height: 44px;
+    line-height: 44px;
+    padding: 0 15px 0 0;
+    border: none;
+    background: #fff;
+    border-bottom: 2px solid #FF8400;
+}
+
+.scoreline.newgaokao .cfraction .title .college-name {
+    font-size: 14px;
+    color: #ccc
+}
+
+.scoreline.newgaokao .college-name span:first-child {
+    font-size: 26px;
+    color: #333
+}
+
+.scoreline.newgaokao .search-box .btn {
+    padding: 11px 0;
+    width: 70px;
+    border: 1px solid #FF8400
+}
+
+.newgaokao .table-th-gray tr th {
+    font-weight: 400 !important;
+    font-size: 14px !important
+}

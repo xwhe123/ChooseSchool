@@ -1,0 +1,737 @@
+.search-bar {
+    height: auto;
+    *zoom: 1
+}
+
+.search-bar:before,
+.search-bar:after {
+    display: table;
+    content: "";
+    line-height: 0
+}
+
+.search-bar:after {
+    clear: both
+}
+
+.search-bar input {
+    width: 770px;
+    float: left;
+    padding: 2px 6px;
+    border-right: 0
+}
+
+.search-bar button {
+    width: 76px
+}
+
+.lt-ie8 .search-bar button {
+    padding: 6px 10px;
+    border-top-width: 1px
+}
+
+.search-bar label {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    color: #999
+}
+
+.search-tab {
+    margin-top: 20px;
+    height: auto;
+    *zoom: 1;
+    border-left: 1px solid #e2e2e2;
+    position: relative;
+    z-index: 1
+}
+
+.search-tab:before,
+.search-tab:after {
+    display: table;
+    content: "";
+    line-height: 0
+}
+
+.search-tab:after {
+    clear: both
+}
+
+.search-tab a {
+    display: block;
+    font-size: 16px;
+    color: #666;
+    background: #f3f3f3;
+    border: 1px solid #e2e2e2;
+    width: 140px;
+    height: 48px;
+    float: left;
+    line-height: 48px;
+    text-align: center;
+    margin-left: -1px;
+    z-index: 2;
+    position: relative
+}
+
+.search-tab a.active {
+    color: #FF8400;
+    border-bottom: 0;
+    background: #fff
+}
+
+.search-tab a:hover {
+    color: #FF8400;
+    background: #fff
+}
+
+.search-tab .line {
+    border-bottom: 1px solid #e2e2e2;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 296px
+}
+
+.search-result {
+    height: auto;
+    *zoom: 1;
+    margin-top: 20px
+}
+
+.search-result:before,
+.search-result:after {
+    display: table;
+    content: "";
+    line-height: 0
+}
+
+.search-result:after {
+    clear: both
+}
+
+.search-result h5 {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 20px
+}
+
+.news-list-box {
+    height: 110px;
+    border-bottom: 1px dotted #ddd;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    margin-top: 30px
+}
+
+.news-list-box img {
+    float: left;
+    margin-right: 10px;
+    width: 145px;
+    height: 97px
+}
+
+.news-list-con {
+    width: 690px;
+    height: 110px;
+    float: left
+}
+
+.news-list-con h3 {
+    color: #424242;
+    font-size: 16px;
+    margin-bottom: 10px
+}
+
+.news-list-con h3 a {
+    color: #424242
+}
+
+.news-list-con h3 a:hover {
+    color: #FF8400
+}
+
+.news-list-con a {
+    color: #999
+}
+
+.news-list-con-txt {
+    color: #666;
+    margin-bottom: 10px;
+    font-size: 14px
+}
+
+.news-list-con-info {
+    color: #999;
+    float: left;
+    margin-right: 15px
+}
+
+.news-list-con-info i {
+    margin-left: 10px
+}
+
+.news-list-con-info p span {
+    padding: 0 5px;
+    font-size: 12px;
+    color: #ddd
+}
+
+.uzy-search .college-list {
+    border-top: 1px solid #e5e5e5;
+    padding: 20px 0;
+    height: auto;
+    overflow: hidden;
+    width: 100%;
+    *zoom: 1
+}
+
+.uzy-search .college-list:before,
+.uzy-search .college-list:after {
+    display: table;
+    content: "";
+    line-height: 0
+}
+
+.uzy-search .college-list:after {
+    clear: both
+}
+
+.uzy-search .college-list:hover {
+    background: #fafafa
+}
+
+.uzy-search .college-list .mark {
+    width: 120px;
+    text-align: left;
+    float: left
+}
+
+.uzy-search .college-list .mark img {
+    width: 100px
+}
+
+.uzy-search .college-list .info {
+    width: 620px;
+    height: auto;
+    float: left;
+    color: #6d6d6d
+}
+
+.uzy-search .college-list .info .top {
+    height: auto;
+    overflow: hidden;
+    border-bottom: 1px dashed #ebebeb;
+    padding: 5px 0 10px
+}
+
+.uzy-search .college-list .info .top a.name {
+    font-size: 20px;
+    color: #333;
+    float: left
+}
+
+.uzy-search .college-list .info .top a.name:hover {
+    color: #FF8400
+}
+
+.uzy-search .college-list .info .top .tag {
+    width: 100px;
+    float: left;
+    margin-left: 10px
+}
+
+.uzy-search .college-list .info .top .tag img {
+    margin-right: 5px
+}
+
+.uzy-search .college-list .info .top .college-degree {
+    float: right;
+    width: 54%;
+    text-align: left
+}
+
+.uzy-search .college-list .info .top .college-degree .label {
+    font-size: 12px;
+    font-weight: 400;
+    color: #fff;
+    border-radius: 4px;
+    padding: 4px 6px;
+    margin-right: 5px;
+    margin-bottom: 0
+}
+
+.uzy-search .college-list .info .top .college-degree .label.hot {
+    background: #60c623;
+    float: left
+}
+
+.uzy-search .college-list .info .top .college-degree .label.attention {
+    background: #23c674
+}
+
+.uzy-search .college-list .info .top .college-degree span {
+    margin-right: 5px;
+    color: #000;
+    float: left
+}
+
+.uzy-search .college-list .info .bottom {
+    padding: 10px 0 0;
+    overflow: hidden;
+    width: 95%
+}
+
+.uzy-search .college-list .info .bottom li {
+    float: left;
+    margin-bottom: 5px;
+    padding: 0;
+    border-bottom: 0;
+    width: 50%;
+    font-size: 14px
+}
+
+.lt-ie8 .uzy-search .college-list .info .bottom li {
+    width: 48%
+}
+
+.uzy-search .college-list .btn_group {
+    width: 80px;
+    float: left;
+    text-align: center;
+    padding: 0 20px;
+    position: relative
+}
+
+.uzy-search .college-list .btn_group button {
+    width: 86px;
+    height: 30px;
+    margin-top: 10px;
+    font-size: 14px;
+    padding: 0;
+    line-height: 28px;
+    display: block
+}
+
+.uzy-search .college-list .btn_group button.btn-defualt {
+    background: #fff;
+    color: #666 !important;
+    border: 1px solid #ccc
+}
+
+.uzy-search .college-list .btn_group button.btn-defualt:hover {
+    background: #ccc;
+    color: #333;
+    border: 1px solid #ccc
+}
+
+.uzy-search .major-list {
+    height: auto;
+    border-bottom: 1px #e2e2e2 solid;
+    *zoom: 1;
+    padding: 20px 0
+}
+
+.uzy-search .major-list:before,
+.uzy-search .major-list:after {
+    display: table;
+    content: "";
+    line-height: 0
+}
+
+.uzy-search .major-list:after {
+    clear: both
+}
+
+.uzy-search .major-list h2 {
+    font-size: 18px;
+    position: relative;
+    margin-bottom: 15px
+}
+
+.uzy-search .major-list h2 .btn {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    padding: 4px 24px;
+    font-size: 14px
+}
+
+.uzy-search .major-list h2 span {
+    font-size: 16px;
+    font-weight: 400;
+    position: absolute;
+    left: 250px;
+    top: 5px
+}
+
+.uzy-search .major-list h2 span.year {
+    left: 320px
+}
+
+.uzy-search .major-list p {
+    font-size: 12px;
+    line-height: 22px;
+    color: #666
+}
+
+.uzy-search .classroom-box {
+    height: auto;
+    *zoom: 1;
+    position: relative;
+    margin-left: -18px
+}
+
+.uzy-search .classroom-box:before,
+.uzy-search .classroom-box:after {
+    display: table;
+    content: "";
+    line-height: 0
+}
+
+.uzy-search .classroom-box:after {
+    clear: both
+}
+
+.uzy-search .classroom-box .excitem {
+    border: 1px solid #e6e6e6;
+    position: relative;
+    background: #fff;
+    margin: 10px 0 20px;
+    overflow: hidden;
+    width: 270px;
+    float: left;
+    margin-left: 18px
+}
+
+.uzy-search .lt-ie8 .classroom-box .excitem a {
+    display: block
+}
+
+.uzy-search .classroom-box .excitem .coursecover {
+    position: relative;
+    border-top: 5px solid #fff;
+    border-left: 5px solid #fff;
+    border-right: 5px solid #fff;
+    height: 200px
+}
+
+.uzy-search .classroom-box .excitem .coursecover img {
+    width: 100%;
+    height: 200px !important
+}
+
+.uzy-search .classroom-box .excitem .coursecover .btn-free {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: #5aaa2d;
+    font-size: 12px;
+    font-family: 'Microsoft YaHei', SimSun, Arial, sans-serif;
+    color: #fff;
+    padding: 0 5px;
+    border-radius: 2px
+}
+
+.uzy-search .classroom-box .excitem p.description {
+    display: block;
+    padding: 2px 10px 0;
+    font-size: 14px;
+    color: #999;
+    line-height: 22px;
+    display: inline-block;
+    margin-bottom: 0;
+    height: 40px
+}
+
+.uzy-search .classroom-box .excitem .divider {
+    width: 100%;
+    height: 1px;
+    background-color: #d8d8d8
+}
+
+.uzy-search .classroom-box .excitem .about {
+    padding: 10px;
+    overflow: hidden;
+    font-size: 12px;
+    color: #333
+}
+
+.uzy-search .classroom-box .excitem .about .teacher {
+    float: right
+}
+
+.uzy-search .classroom-box .excitem .about .teacher i {
+    color: #9b9b9d;
+    margin-right: 5px
+}
+
+.uzy-search .classroom-box .excitem .about span.playCount {
+    display: inline-block;
+    float: left;
+    width: 40%
+}
+
+.uzy-search .classroom-box .excitem .about span.comment {
+    float: left
+}
+
+.uzy-search .classroom-box .excitem .about span.original-price {
+    color: #999;
+    text-decoration: line-through
+}
+
+.uzy-search .classroom-box .excitem .about span.preferential-price {
+    float: right
+}
+
+.uzy-search .classroom-box .excitem .vedio-price {
+    padding: 10px;
+    background: #f9f9f9;
+    font-size: 12px;
+    overflow: hidden
+}
+
+.uzy-search .classroom-box .excitem .vedio-price .original-cost {
+    color: #999;
+    text-decoration: line-through
+}
+
+.uzy-search .classroom-box .excitem .vedio-price .VIP-price {
+    color: #FF8400;
+    float: right;
+    font-weight: 700;
+    font-size: 14px
+}
+
+.uzy-search .classroom-box .excitem .about span.price {
+    float: right
+}
+
+.uzy-search .classroom-box .excitem .played {
+    float: right
+}
+
+.uzy-search .classroom-box .excitem .play {
+    position: absolute;
+    font-size: 10px;
+    left: 35%;
+    top: 11%;
+    opacity: .8;
+    display: inline-block;
+    color: #333;
+    display: none
+}
+
+.uzy-search .classroom-box .excitem:hover .play {
+    display: block
+}
+
+.uzy-search .classroom-box .excitem h4 a {
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    border-bottom: 1px dashed #ccc;
+    width: 255px;
+    margin: 5px auto 0;
+    padding: 10px 0;
+    color: #333
+}
+
+.uzy-search .classroom-box .excitem a:hover {
+    color: #FF8400
+}
+
+.uzy-search .classroom-box .excitem h4 .teacher {
+    float: right
+}
+
+.uzy-search .classroom-box .excitem h4 .teacher i {
+    margin-right: 3px
+}
+
+.uzy-search .experts-box .list-box .list {
+    margin-top: 5px;
+    height: auto
+}
+
+.uzy-search .experts-box .list-box .list .item {
+    padding: 20px 25px;
+    background: #f8f8f8;
+    border-bottom: 1px solid #dedede;
+    margin-top: 20px;
+    overflow: hidden;
+    position: relative
+}
+
+.uzy-search .experts-box .list-box .list .item .avatar {
+    width: 80px;
+    height: 80px;
+    float: left;
+    border-radius: 50%
+}
+
+.uzy-search .experts-box .list-box .list .item .info {
+    width: 65%;
+    float: left;
+    margin-left: 20px;
+    color: #7e7f7e;
+    font-size: 16px
+}
+
+.uzy-search .experts-box .list-box .list .item .info .name a {
+    color: #7e7f7e;
+    font-size: 16px;
+    margin-right: 20px
+}
+
+.uzy-search .experts-box .list-box .list .item .info span {
+    display: inline-block;
+    font-size: 14px
+}
+
+.uzy-search .experts-box .list-box .list .item .info-service {
+    font-size: 12px;
+    margin-top: 10px;
+    padding: 0 25px 0 0
+}
+
+.uzy-search .experts-box .list-box .list .item .info-service label {
+    background: #dab97f !important;
+    color: #fff !important;
+    padding: 3px 6px !important;
+    display: inline-block
+}
+
+.uzy-search .experts-box .list-box .list .item .info-service .territory {
+    font-size: 12px;
+    margin-left: 10px;
+    color: #a3a3a3
+}
+
+.uzy-search .experts-box .list-box .list .item .consult {
+    float: right;
+    margin-top: 30px;
+    margin-right: 20px
+}
+
+.uzy-search .experts-box .list-box .list .info .level-info {
+    font-size: 14px !important;
+    margin-top: 10px
+}
+
+.uzy-search .experts-box .list-box .list .info .level-info .img {
+    margin-left: 10px
+}
+
+.uzy-search .experts-box .list-box .list .info .level-info .img img {
+    margin-right: 5px;
+    margin-top: -5px
+}
+
+.uzy-search .experts-box .star-box {
+    display: inline-block;
+    width: 70px;
+    height: 14px;
+    background-image: url(../../../../../staticv3.youzy.cn/ToC.PC/images/experts/start.png);
+    background-position: 0 0;
+    position: relative
+}
+
+.uzy-search .experts-box .star-box .star {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 70px;
+    height: 14px;
+    background: url(../../../../../staticv3.youzy.cn/ToC.PC/images/experts/start.png);
+    background-position: 0 -14px
+}
+
+.uzy-search .experts-box .star-box.blue {
+    display: inline-block;
+    width: 70px;
+    height: 14px;
+    background-image: url(../../../../../staticv3.youzy.cn/ToC.PC/images/experts/start-blue.png);
+    background-position: 0 0;
+    position: relative
+}
+
+.uzy-search .experts-box .star-box.blue .star {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 70px;
+    height: 14px;
+    background: url(../../../../../staticv3.youzy.cn/ToC.PC/images/experts/start-blue.png);
+    background-position: 0 -14px
+}
+
+
+.search-bar{
+    position: relative;
+}
+.search-bar #btnSearch{
+    position: absolute;
+    top: 6.5px;
+    right: 10px;
+    width: 26px;
+    height: 26px;
+    background: url(../../../../images/major/search.html);
+    border: 0;
+    cursor: pointer;
+}
+.search-result-all .major-list ul li{
+    width: 110px;
+    float: left;
+    color: #999;
+    margin-right: 80px;
+    list-style-type:normal;
+}
+.search-result-all .major-list a{
+    font-size: 18px;
+}
+.search-result-all .major-list .major-type{
+    float: right;
+    font-size: 14px;
+}
+.warn-box.sad .info p .commonSearchWarn span{
+    color: #FF8400 !important;
+}
+.highlight {
+    color: #FF8400;
+}
+.search-bar input{
+    border-right:1px solid #ccc;
+}
+
+.result-item {
+    border-bottom: 1px #e2e2e2 solid;
+    padding: 20px 0;
+}
+
+.result-item-title {
+    line-height: 24px;
+    height: 24px;
+}
+
+.fontColor212121 {
+    color: #212121 !important;
+}
+
+.fontColor757575 {
+    color: #757575 !important;
+}
+
+.fontColorddd {
+    color: #ddd !important;
+}
+.search-result-all .highlight {
+    color: #FF8400;
+}
+
+.uzy-college-list .p0{
+    padding: 0 0;
+}
+.warn-box.sad .info p .commonSearchWarn span{
+    color: #FF8400 !important;
+}

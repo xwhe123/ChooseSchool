@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  
+<!-- Mirrored from zhiyuantong.edu.sina.com.cn/f.url,{isEncodeQuery:f.isEncode} by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 13 Jul 2020 07:46:21 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="referer" content="never" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="renderer" content="webkit" />
+    <title>新浪教育</title>
+    <style>
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+      }
+
+      body {
+        margin: 0;
+      }
+
+      .main_frame {
+        width: 100%;
+        height: 100%;
+        border: 0;
+      }
+    </style>
+    <script src="../i.sso.sina.com.cn/js/outlogin_layer.js"></script>
+    <script>
+      function autoLogin(url) {
+        var uri = encodeURIComponent(
+          document.location.pathname + document.location.search
+        );
+        location.href = "/autologin?uri=" + uri;
+      }
+
+      // SSO 登录JS SDK
+      var need_reload = false;
+      var sso = window.SINA_OUTLOGIN_LAYER;
+      sso.set("sso", { entry: "edu" }).init();
+      sso.register("login_success", () => {
+        const info = sso.getSinaCookie();
+        if (info && info.uid && need_reload) {
+          autoLogin();
+        }
+      });
+      // 判断是否登录,没登录就弹出登录层
+      window.onload = function() {
+        console.log("debug", sso.isLogin(), sso.getSinaCookie());
+        if (!sso.isLogin()) {
+          if (/mobile/i.test(navigator.userAgent)) {
+            location.href =
+              "//passport.weibo.cn/signin/login?entry=mweibo&r=" +
+              encodeURIComponent(location.href);
+          } else {
+            sso.show();
+          }
+
+          need_reload = true;
+        } else {
+        }
+      };
+      // 监听post message消息
+      window.addEventListener(
+        "message",
+        function(evt) {
+          // 如果来源符合控制器中定义的变量
+          if (evt.origin == "https://ha-sina.youzy.cn/") {
+            console.log("post message", evt.data);
+            if (evt.data.data) {
+              //改写页面标题
+              if (evt.data.data.title) {
+                document.title = evt.data.data.title;
+              }
+              //判断URI是否一致
+              if (evt.data.data.url) {
+                var ifm_uri = evt.data.data.url.replace(
+                  /^http[s]?:\/\/.*?\//,
+                  "/"
+                );
+                var top_uri = location.href.replace(/^http[s]?:\/\/.*?\//, "/");
+                // 地址不一致,假写
+                if (ifm_uri != top_uri) {
+                  console.log("地址不一致", top_uri, ifm_uri);
+                  history.replaceState("", "", ifm_uri);
+                }
+              }
+              // 判断用户是否一致
+              if (evt.data.data) {
+                var userInfo = sso.getSinaCookie();
+                if (userInfo && userInfo.uid != evt.data.data.uid) {
+                  console.log("用户身份不一致", userInfo.uid, evt.data.data.uid);
+                  autoLogin();
+                }
+              }
+            }
+          }
+        },
+        false
+      );
+    </script>
+  </head>
+  <body>
+    <iframe id="main_iframe" src="#" class="main_frame"></iframe>
+  <!-- SUDA_CODE_START DAGGER --> 
+<script type="text/javascript" src="../www.sinaimg.cn/unipro/pub/suda_s_v851c.js"></script>
+<noScript> 
+<div style='position:absolute;top:0;left:0;width:0;height:0;visibility:hidden'><img width=0 height=0 src='../beacon.sina.com.cn/a1b2e.gif?noScript' border='0' alt='' /></div> 
+</noScript> 
+<!-- SUDA_CODE_END DAGGER -->
+<!-- DMP_CODE_START DAGGER --> 
+<script type="text/javascript">
+(function(d, s, id) {
+    var n = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    s = d.createElement(s);
+    s.id = id;
+    s.setAttribute('charset', 'utf-8');
+    s.src = '//d' + Math.floor(0 + Math.random() * (8 - 0 + 1)) + '.sina.com.cn/litong/zhitou/sinaads/src/spec/sinaads_ck.js';
+    n.parentNode.insertBefore(s, n);
+})(document, 'script', 'sinaads-ck-script');
+</script>
+<!-- DMP_CODE_END DAGGER -->
+</body>
+
+<!-- Mirrored from zhiyuantong.edu.sina.com.cn/f.url,{isEncodeQuery:f.isEncode} by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 13 Jul 2020 07:46:21 GMT -->
+</html>
